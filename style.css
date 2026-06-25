@@ -425,36 +425,6 @@ body {
     animation: counterRotate 15s linear infinite;
 }
 
-/* Floating Badges */
-.floating-badge {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    background: rgba(20, 20, 20, 0.85);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid var(--border-gold-subtle);
-    padding: 12px 18px;
-    border-radius: 50px;
-    font-family: var(--font-heading);
-    font-size: 0.9rem;
-    font-weight: 600;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
-}
-.gold-icon {
-    color: var(--color-gold-base);
-}
-.badge-1 {
-    top: 15%;
-    left: -20px;
-    animation: floatAnim 4s ease-in-out infinite;
-}
-.badge-2 {
-    bottom: 15%;
-    right: -20px;
-    animation: floatAnim 4.5s ease-in-out infinite reverse;
-}
 
 /* ==========================================================================
    ABOUT ME SECTION
@@ -1449,11 +1419,6 @@ body {
 /* ==========================================================================
    KEYFRAME ANIMATIONS
    ========================================================================== */
-@keyframes floatAnim {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
-    100% { transform: translateY(0); }
-}
 
 @keyframes rotateGlow {
     0% { transform: rotate(0deg); }
