@@ -641,6 +641,13 @@ body {
     transform: scale(1.05);
 }
 
+#project-seo .project-img-container {
+    background-color: #02192b;
+}
+#project-seo .project-img-container img {
+    object-fit: contain;
+}
+
 .project-overlay {
     position: absolute;
     top: 20px;
