@@ -415,13 +415,12 @@ body {
     height: 100%;
     border-radius: 50%;
     overflow: hidden;
-    background: var(--color-bg-card);
+    background: #fefefe;
 }
 .image-inner img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    filter: brightness(0.95) contrast(1.05);
+    object-fit: contain;
     animation: counterRotate 15s linear infinite;
 }
 
