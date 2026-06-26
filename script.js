@@ -90,12 +90,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const certModalClose = document.getElementById('cert-modal-close');
     const modalCertTitle = document.getElementById('modal-cert-title');
     const modalCertImg = document.getElementById('modal-cert-img');
-    const certBtns = document.querySelectorAll('.cert-btn');
+    const certTriggers = document.querySelectorAll('.cert-btn, .cert-img-wrapper');
 
-    certBtns.forEach(btn => {
-        btn.addEventListener('click', (e) => {
-            const certImgSrc = e.currentTarget.getAttribute('data-cert');
-            const certTitle = e.currentTarget.getAttribute('data-title');
+    certTriggers.forEach(trigger => {
+        trigger.addEventListener('click', (e) => {
+            const card = e.currentTarget.closest('.cert-card');
+            const btn = card.querySelector('.cert-btn');
+            const certImgSrc = btn.getAttribute('data-cert');
+            const certTitle = btn.getAttribute('data-title');
             
             modalCertImg.setAttribute('src', certImgSrc);
             modalCertTitle.textContent = certTitle;
